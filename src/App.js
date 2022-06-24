@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-function App() {
+import Header from "../src/components/Header";
+import Footer from "../src/components/Footer";
+import ProductViewModal from "../src/components/ProductViewModal";
+import Home from "../src/pages/Home";
+import Catalog from "../src/pages/Catalog";
+import Cart from "../src/pages/Cart";
+import Product from "../src/pages/Product";
+
+import Routes from "./routes/Routes";
+function App(props) {
+  console.log("props", props);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <>
+        {/* <Route
+        render={(props) => (
+          <div> */}
+        <Header {...props} />
+        <div className="container">
+          <div className="main">
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/catalog/:slug" component={Product} />
+              <Route path="/catalog" component={Catalog} />
+              <Route path="/cart" component={Cart} />
+            </Switch>
+          </div>
+        </div>
+        <Footer />
+        <ProductViewModal />
+        {/* </div>
+        )}
+      /> */}
+      </>
+    </BrowserRouter>
   );
 }
 
