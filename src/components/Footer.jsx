@@ -83,9 +83,9 @@ const Footer = () => {
                     </div>
                     <div>
                         <div className="footer__title">
-                            Về Yolo
+                            Routine
                         </div>
-                        Hướng đến mục tiêu mang lại niềm vui ăn mặc mới mỗi ngày cho hàng triệu người tiêu dùng Việt. Hãy cùng Yolo hướng đến một cuộc sống năng động, tích cực hơn.
+                        Routine hướng đến việc trở thành thói quen, lựa chọn hàng ngày cho nam giới trong mọi tình huống. Bởi Routine hiểu rằng, sự tự tin về phong cách ăn mặc sẽ làm nền tảng, tạo động lực cổ vũ mỗi người mạnh dạn theo đuổi những điều mình mong muốn.
                     </div>
                    
                   
