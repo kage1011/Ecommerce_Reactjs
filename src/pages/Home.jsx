@@ -12,7 +12,7 @@ import heroSliderData from '../assets/fake-data/hero-slider'
 import policy from '../assets/fake-data/policy'
 import productData from '../assets/fake-data/products'
 
-import banner from '../assets/images/banner2.png'
+import banner from '../assets/images/ban.jpg'
 
 const Home = () => {
     console.log('data',heroSliderData);
