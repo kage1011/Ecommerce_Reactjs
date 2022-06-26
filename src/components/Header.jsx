@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import {
   UserOutlined,
   ShoppingCartOutlined,
-  SearchOutlined,
   AppstoreOutlined,
   CloseOutlined,
 } from "@ant-design/icons";
@@ -27,6 +26,7 @@ const mainNav = [
 
 const Header = () => {
   const { pathname } = useLocation();
+  // eslint-disable-next-line no-unused-vars
   const activeNav = mainNav.findIndex((e) => e.path === pathname);
   const headerRef = useRef(null);
 
